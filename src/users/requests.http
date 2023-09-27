@@ -1,12 +1,26 @@
-### Create a new User
+### Sign up
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
 
+{
+  "email": "test@test.com",
+  "password": "12345"
+}
+
+### Sign In
 POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-  "email": "acacsac@outlook.com",
-  "password": "olaaaaaaa"
+  "email": "test@test.com",
+  "password": "12345"
 }
+
+### Get Current singed in user
+GET http://localhost:3000/auth/whoami
+
+### sign out
+POST http://localhost:3000/auth/signout
 
 ### Find a particular user with
 

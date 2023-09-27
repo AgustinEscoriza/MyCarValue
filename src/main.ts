@@ -6,7 +6,7 @@ const cookieSesion = require('cookie-session');
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.use(cookieSesion({
-    key: ['asfasfds']
+    keys: ['asfasfds']
   }));
   app.useGlobalPipes(
     new ValidationPipe({
